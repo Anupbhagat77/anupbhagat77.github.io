@@ -280,7 +280,7 @@ footer a:hover{color:var(--ink)}
 </header>
 
 <div class="marquee" aria-hidden="true"><div class="track" id="track">
-  <span>SQL</span><span>Python</span><span>Power BI</span><span>Qlik Sense</span><span>XGBoost</span><span>RAG</span><span>LangChain</span><span>LLM Evaluation</span><span>Django</span><span>AI Engineering</span><span>A/B Testing</span><span>Tableau</span><span>Looker</span><span>n8n</span><span>Docker</span><span>BERT</span><span>Hugging Face</span><span>SHAP</span><span>YOLO</span><span>FastAPI</span><span>Computer Vision</span>
+  <span>SQL</span><span>Python</span><span>Power BI</span><span>Qlik Sense</span><span>XGBoost</span><span>RAG</span><span>LangChain</span><span>LLM Evaluation</span><span>Django</span><span>AI Engineering</span><span>A/B Testing</span><span>Tableau</span><span>Looker</span><span>n8n</span><span>Docker</span><span>BERT</span><span>Hugging Face</span><span>SHAP</span><span>YOLO</span><span>Stable Diffusion</span><span>Computer Vision</span>
 </div></div>
 
 <section id="about">
@@ -345,8 +345,8 @@ footer a:hover{color:var(--ink)}
   <div class="wrap">
     <div class="head rv"><div><span class="mono">04 / Skills</span><h2>The toolkit</h2></div></div>
     <div class="bento">
-      <div class="box b1 rv"><h4><i>🤖</i>Machine Learning</h4><div class="tags"><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Random Forest</span><span class="tag">Logistic Regression</span><span class="tag">SVM</span><span class="tag">Naive Bayes</span><span class="tag">Hugging Face Transformers</span><span class="tag">BERT fine-tuning</span><span class="tag">TF-IDF / NLP</span><span class="tag">Feature engineering</span><span class="tag">Boruta feature selection</span><span class="tag">KNN imputation</span><span class="tag">Imbalanced data / oversampling</span><span class="tag">GridSearchCV tuning</span><span class="tag">Model evaluation (F1, ROC-AUC)</span><span class="tag">SHAP explainability</span><span class="tag">YOLO</span><span class="tag">RetinaFace</span><span class="tag">OpenCV</span></div></div>
-      <div class="box b2 rv"><h4><i>✨</i>AI Engineering</h4><div class="tags"><span class="tag">RAG</span><span class="tag">LLM evaluation</span><span class="tag">Model cascades / routing</span><span class="tag">Prompt engineering</span><span class="tag">LangChain (tool calling)</span><span class="tag">Information extraction</span><span class="tag">OpenAI / Gemini APIs</span><span class="tag">LiteLLM</span><span class="tag">n8n AI workflows</span><span class="tag">Pydantic</span><span class="tag">Django</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span><span class="tag">REST APIs</span></div></div>
+      <div class="box b1 rv"><h4><i>🤖</i>Machine Learning</h4><div class="tags"><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Random Forest</span><span class="tag">Logistic Regression</span><span class="tag">SVM</span><span class="tag">Naive Bayes</span><span class="tag">Hugging Face Transformers</span><span class="tag">BERT fine-tuning</span><span class="tag">TF-IDF / NLP</span><span class="tag">Feature engineering</span><span class="tag">Boruta feature selection</span><span class="tag">KNN imputation</span><span class="tag">Imbalanced data / oversampling</span><span class="tag">GridSearchCV tuning</span><span class="tag">Model evaluation (F1, ROC-AUC)</span><span class="tag">SHAP explainability</span><span class="tag">YOLO</span><span class="tag">InsightFace</span><span class="tag">OpenCV</span><span class="tag">PyTorch</span></div></div>
+      <div class="box b2 rv"><h4><i>✨</i>AI Engineering</h4><div class="tags"><span class="tag">RAG</span><span class="tag">LLM evaluation</span><span class="tag">Model cascades / routing</span><span class="tag">Prompt engineering</span><span class="tag">LangChain (tool calling)</span><span class="tag">Information extraction</span><span class="tag">OpenAI / Gemini APIs</span><span class="tag">LiteLLM</span><span class="tag">n8n AI workflows</span><span class="tag">Pydantic</span><span class="tag">Stable Diffusion / Diffusers</span><span class="tag">Django</span><span class="tag">Streamlit</span><span class="tag">REST APIs</span></div></div>
       <div class="box b3 rv"><h4><i>📊</i>BI &amp; Visualisation</h4><div class="tags"><span class="tag">Power BI / DAX</span><span class="tag">Qlik Sense</span><span class="tag">Tableau</span><span class="tag">Looker</span><span class="tag">Excel / Power Query</span><span class="tag">Row-level security</span><span class="tag">KPI design</span></div></div>
       <div class="box b4 rv"><h4><i>🧮</i>Data &amp; Statistics</h4><div class="tags"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Hypothesis testing</span><span class="tag">A/B testing</span><span class="tag">EDA</span><span class="tag">Variance analysis</span></div></div>
       <div class="box b5 rv"><h4><i>🛠️</i>Engineering</h4><div class="tags"><span class="tag">ETL</span><span class="tag">Data modelling</span><span class="tag">SAP HANA</span><span class="tag">Git</span><span class="tag">Docker / Compose</span><span class="tag">CI/CD</span><span class="tag">Unit testing</span><span class="tag">GCP</span><span class="tag">dbt (basic)</span><span class="tag">Snowflake (basic)</span></div></div>
@@ -411,19 +411,20 @@ const PROJECTS = [
     tags:["Python","LiteLLM","LLM evaluation"], links:[]
   },
   {
-    icon:"🛡️", cat:"Computer Vision", kind:"Deep learning & MLOps · HTW Berlin · Technical lead",
-    title:"Privacy-preserving computer vision system",
-    short:"Automatically detects and masks faces and licence plates in images, for GDPR-style privacy needs.",
-    metrics:[["~1.23 s","per image on CPU"],["< 5 s","target met"]],
-    details:"A containerised computer vision application that finds sensitive regions in images (human faces and vehicle licence plates) and obscures them while keeping the rest of the image intact. It was motivated by privacy requirements such as GDPR and CCPA. Generative inpainting was the original concept and remains a planned extension. I built the entire technical side of this team project.",
+    icon:"🛡️", cat:"Computer Vision", kind:"Generative AI & CV · HTW Berlin · Technical lead",
+    title:"Privacy-preserving vision with generative inpainting",
+    short:"Detects faces and licence plates, then regenerates them with Stable Diffusion, so images stay private and still look natural.",
+    metrics:[["Image + video","anonymization"],["PSNR / SSIM","quality checks"]],
+    details:"Faces and licence plates are personal data under GDPR and CCPA, and blur or black boxes ruin the image. This system detects the sensitive regions and replaces them with realistic AI-generated content instead. I built the entire technical side of this team project.",
     bullets:[
-      "Integrated RetinaFace for face detection and YOLO for licence-plate detection, with confidence thresholds of 0.7 and 0.6.",
-      "Anonymised detected regions with solid masks while preserving the rest of the image.",
-      "Built a FastAPI backend for processing and a Streamlit frontend for uploading and viewing images.",
-      "Packaged it with Docker and Docker Compose for reproducible execution.",
-      "Processed an image in about 1.23 seconds on CPU, well under the 5-second target."
+      "Detected faces with InsightFace SCRFD and licence plates with YOLO, falling back to an OpenCV Haar cascade.",
+      "Built binary masks from the detections, with adjustable dilation and a live mask-overlay preview.",
+      "Regenerated masked regions with Stable Diffusion 2 inpainting (Hugging Face diffusers), using tuned prompts and negative prompts, and added optional synthetic plate text.",
+      "Extended the pipeline to frame-by-frame video anonymization.",
+      "Evaluated preservation of the rest of the image with PSNR and SSIM on non-masked regions.",
+      "Shipped it as a Streamlit app with Image, Video, Evaluation and Datasets tabs, containerised with Docker."
     ],
-    tags:["YOLO","RetinaFace","OpenCV","FastAPI","Streamlit","Docker"], links:[]
+    tags:["Stable Diffusion","PyTorch","InsightFace","YOLO","OpenCV","Streamlit"], links:[]
   },
   {
     icon:"💬", cat:"NLP", kind:"NLP · Team of 6 · Technical lead",
