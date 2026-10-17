@@ -1,3 +1,5 @@
-## Anup Bhagat – Portfolio
+## Hi, I'm Anup
+
+### Based in Berlin.
 
 
