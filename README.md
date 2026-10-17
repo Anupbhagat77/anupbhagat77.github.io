@@ -1,3 +1,3 @@
-ü## Anup Bhagat – Portfolio
+## Anup Bhagat – Portfolio
 
 
