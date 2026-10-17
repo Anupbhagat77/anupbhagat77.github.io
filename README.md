@@ -29,7 +29,7 @@ I turn messy data into dashboards, experiments and models that people actually u
 | Project | What it does | Highlights |
 |---|---|---|
 | 🧠 **LLM Model Cascade** (M.Sc. thesis) | Benchmarks GPT-4.1, Gemini and cascade routing on MMLU and GSM8K | **59.8%** estimated cost reduction (oracle routing) |
-| 🛡️ **Privacy-Preserving Vision + Generative Inpainting** | Detects faces and licence plates (InsightFace, YOLO) and regenerates them with Stable Diffusion 2 | Image + video, PSNR/SSIM evaluation |
+| 🛡️ **[Privacy-Preserving Vision + Generative Inpainting](https://github.com/Anupbhagat77/Privacy-Peserving-Computer-Vision-System)** | Detects faces and licence plates (InsightFace, YOLO) and regenerates them with Stable Diffusion 2 | Image + video, PSNR/SSIM evaluation |
 | 💬 **Sarcasm Detection: Classic ML vs. BERT** | Compares five classifiers with fine-tuned BERT (Hugging Face) | F1 **0.74 → 0.83**, ROC-AUC ≈ 0.97 |
 | 🎧 **Music Streaming Analytics** | Python data prep, two Power BI dashboards, A/B test design | Solo case study, UMG Germany dataset |
 | 🔬 **SECOM Quality Prediction** | Rare-defect prediction on imbalanced sensor data | XGBoost, Boruta, SHAP |
