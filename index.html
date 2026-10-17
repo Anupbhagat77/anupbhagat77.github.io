@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
 <style>
 :root{
   --bg:#08090b; --bg-2:#0e1013; --card:#13161a; --card-2:#191d22; --line:#23282f;
@@ -113,8 +114,8 @@ section{padding:130px 0 0}
 .head p{color:var(--muted);max-width:40ch}
 
 /* reveal */
-.rv{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-.rv.in{opacity:1;transform:none}
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
 
 /* about */
 .about{display:grid;grid-template-columns:1.25fr 1fr;gap:20px}
@@ -257,23 +258,24 @@ footer a:hover{color:var(--ink)}
   <div><span class="status fade-in" style="animation-delay:.1s"><b></b>Open to full-time roles in Germany · from Nov 2026</span></div>
   <h1>
     <span class="line"><span>Hi, I'm Anup.</span></span>
-    <span class="line"><span>I'm a <span class="grad role" id="role">Data Analyst</span></span></span>
+    <span class="line"><span>I'm <span class="grad role" id="role">a Data Analyst</span></span></span>
     <span class="line"><span>based in Berlin.</span></span>
   </h1>
-  <p class="lead fade-in" style="animation-delay:.45s">I turn messy enterprise data into <b>dashboards, experiments and models</b> that people actually use: 3+ years of BI at TCS, and now <b>ML, RAG and LLM workflows</b> as a working student while finishing my M.Sc. at HTW Berlin.</p>
+  <p class="lead fade-in" style="animation-delay:.45s">I turn messy enterprise data into <b>dashboards, experiments and models</b> that people actually use: 3+ years in data analytics, from BI at TCS to <b>ML, RAG and LLM workflows</b> as a working student, while finishing my M.Sc. at HTW Berlin.</p>
   <div class="cta fade-in" style="animation-delay:.6s">
     <a class="btn primary mag" href="#projects">See my work
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     <a class="btn ghost mag" href="assets/Anup_Bhagat_CV.pdf" download>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download CV</a>
     <a class="btn ghost mag" href="https://www.linkedin.com/in/-anup-bhagat-" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="btn ghost mag" href="https://github.com/Anupbhagat77" target="_blank" rel="noopener">GitHub ↗</a>
   </div>
 
   <div class="stats">
-    <div class="stat rv"><b><span data-count="3">0</span>+</b><span>years of data analytics at TCS</span></div>
-    <div class="stat rv"><b><span data-count="10">0</span>+</b><span>Power BI &amp; Qlik dashboards built</span></div>
-    <div class="stat rv"><b>~<span data-count="20">0</span>%</b><span>less reporting prep time</span></div>
-    <div class="stat rv"><b>&gt;<span data-count="95">0</span>%</b><span>reporting accuracy held</span></div>
+    <div class="stat rv"><b><span data-count="3">3</span>+ yrs</b><span>of data analytics experience</span></div>
+    <div class="stat rv"><b><span data-count="10">10</span>+</b><span>Power BI &amp; Qlik dashboards built</span></div>
+    <div class="stat rv"><b>~<span data-count="20">20</span>%</b><span>less reporting prep time</span></div>
+    <div class="stat rv"><b>&gt;<span data-count="95">95</span>%</b><span>reporting accuracy held</span></div>
   </div>
 </header>
 
@@ -310,7 +312,7 @@ footer a:hover{color:var(--ink)}
           <li>Designed information-extraction pipelines with validation checks, turning unstructured business and financial content into analysis-ready data.</li>
           <li>Built AI-driven workflow automations in n8n with LLMs and prompt engineering, cutting manual work on recurring tasks.</li>
           <li>Tested and validated LLM outputs end-to-end before production rollout.</li>
-          <li>Built REST APIs and backend features in Django for internal AI applications.</li>
+          <li>Developed backend applications and REST APIs in Django, optimising data models for scalable storage, retrieval and workflow automation.</li>
           <li>Shipped with Docker, Git, CI/CD and unit tests, and reviewed teammates' pull requests.</li>
         </ul>
         <div class="tags"><span class="tag">Python</span><span class="tag">RAG</span><span class="tag">LLMs</span><span class="tag">Django</span><span class="tag">n8n</span><span class="tag">Pydantic</span><span class="tag">Docker</span><span class="tag">CI/CD</span></div>
@@ -321,7 +323,7 @@ footer a:hover{color:var(--ink)}
         <ul>
           <li>Built 10+ Power BI and Qlik Sense dashboards from the data model up, covering sales, revenue and operational KPIs for 20+ stakeholders.</li>
           <li>Built CXO executive dashboards with actual vs. target and prior-period variance analysis.</li>
-          <li>Owned 2–3 business dashboards end-to-end on my own, from SQL to publication.</li>
+          <li>Independently owned 2–3 business dashboards end-to-end, from SQL to publication.</li>
           <li>Wrote complex DAX, published to the Power BI Service and implemented row-level security.</li>
           <li>Cut reporting prep time by ~20% by automating SAP HANA, SQL and Excel consolidation with SQL and Python.</li>
           <li>Kept reporting accuracy above 95% and sped up SQL queries by up to 50%.</li>
@@ -379,8 +381,9 @@ footer a:hover{color:var(--ink)}
       <div class="cta">
         <a class="btn primary mag" href="assets/Anup_Bhagat_CV.pdf" download>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download Resume (PDF)</a>
-        <button class="btn ghost mag copy" id="copy" data-email="anupbhagat5080@gmail.com"><span class="toast">Copied!</span>✉ anupbhagat5080@gmail.com</button>
+        <button class="btn ghost mag copy" id="copy" data-email="anupbhagat5080@gmail.com"><span class="toast" aria-hidden="true">Copied!</span>✉ anupbhagat5080@gmail.com</button>
         <a class="btn ghost mag" href="https://www.linkedin.com/in/-anup-bhagat-" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="btn ghost mag" href="https://github.com/Anupbhagat77" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
     </div>
   </div>
@@ -402,9 +405,9 @@ const PROJECTS = [
     icon:"🧠", cat:"GenAI", kind:"M.Sc. Thesis · HTW Berlin",
     title:"LLM model cascade for cost-efficient inference",
     short:"Benchmarking GPT-4.1, Gemini and cascade routing to cut LLM cost without losing quality.",
-    metrics:[["59.8%","est. cost reduction"],["105.9%","quality retention"]],
+    metrics:[["59.8%","est. cost reduction"],["105.9%","quality vs. GPT-4.1 alone (oracle)"]],
     details:"An evaluation framework comparing single models with cascade routing strategies on the same question set, measuring cost against answer quality.",
-    bullets:["Benchmarked GPT-4.1, Gemini and cascade routing on 100 MMLU and GSM8K questions.","Estimated a 59.82% cost reduction at 105.88% quality retention under oracle routing.","Built with Python, LiteLLM and the OpenAI / Gemini APIs."],
+    bullets:["Benchmarked GPT-4.1, Gemini and cascade routing on 100 MMLU and GSM8K questions.","Estimated a 59.82% cost reduction at 105.88% quality retention under oracle routing, meaning the best-case cascade matched and slightly exceeded the strongest single model's accuracy.","Built with Python, LiteLLM and the OpenAI / Gemini APIs."],
     tags:["Python","LiteLLM","LLM evaluation"], links:[]
   },
   {
@@ -441,16 +444,16 @@ const PROJECTS = [
     tags:["XGBoost","SHAP","Imbalanced data"], links:[]
   },
   {
-    icon:"📦", cat:"BI & Analytics", kind:"Analytics · University project",
+    icon:"📦", cat:"BI & Analytics", kind:"Analytics · University project · OBETA data",
     title:"OBETA warehousing analytics",
     short:"Warehouse and inventory analysis with Power BI KPI dashboards.",
-    metrics:[["15%","less excess inventory"]],
-    details:"Analysed warehouse operations and inventory data to support better stock planning.",
-    bullets:["Analysed operations and inventory data with Python and SQL.","Built Power BI KPI dashboards for the warehouse team.","The insights contributed to a 15% reduction in excess inventory."],
+    metrics:[["15%","excess-inventory reduction potential"]],
+    details:"A university project using real warehouse operations and inventory data provided by OBETA, aimed at better stock planning.",
+    bullets:["Analysed operations and inventory data with Python and SQL.","Built Power BI KPI dashboards to track inventory and operations.","Identified stock-planning improvements with the potential to reduce excess inventory by 15%."],
     tags:["Python","SQL","Power BI"], links:[]
   },
   {
-    icon:"🎧", cat:"BI & Analytics", kind:"Solo case study · Universal Music Group Germany",
+    icon:"🎧", cat:"BI & Analytics", kind:"Solo case study · UMG Germany dataset",
     title:"Music streaming analytics & A/B test design",
     short:"Python data prep, two interactive Power BI dashboards and an A/B test plan to grow listening time.",
     metrics:[["2","interactive dashboards"],["14-day","A/B test design"]],
@@ -463,15 +466,6 @@ const PROJECTS = [
       "Planned for balanced groups, outlier normalisation for heavy users and demographic segmentation."
     ],
     tags:["Power BI","Python / Pandas","A/B test design","Product analytics"], links:[]
-  },
-  {
-    icon:"🔎", cat:"GenAI", kind:"GenAI · Masem",
-    title:"RAG solutions for business use cases",
-    short:"Retrieval-augmented LLM pipelines, evaluated on quality, latency and cost.",
-    metrics:[],
-    details:"Pipelines that pair domain-specific knowledge with LLMs for AI-driven business use cases.",
-    bullets:["Integrated domain-specific knowledge with LLMs via retrieval-augmented generation.","Compared models on answer quality, latency and cost to choose the best fit per use case.","Delivered within n8n-based workflow automations."],
-    tags:["RAG","LLMs","n8n"], links:[]
   }
 ];
 
@@ -544,13 +538,13 @@ $$('.rv').forEach(el=>io.observe(el));
 /* ---------- counters ---------- */
 function countUp(el){
   const end=+el.dataset.count; if(reduce){el.textContent=end;return;}
-  const t0=performance.now(), d=1400;
+  el.textContent='0'; const t0=performance.now(), d=1400;
   (function f(t){const k=Math.min((t-t0)/d,1), e=1-Math.pow(1-k,3); el.textContent=Math.round(end*e); if(k<1) requestAnimationFrame(f);})(t0);
 }
 
 /* ---------- typing role ---------- */
 (function(){
-  const roles=['Data Analyst','Data Scientist','AI Engineer','Analytics Engineer'], el=$('#role');
+  const roles=['a Data Analyst','a Data Scientist','an AI Engineer','an Analytics Engineer'], el=$('#role');
   if(reduce) return; let i=0,j=roles[0].length,del=false;
   setTimeout(function tick(){
     const w=roles[i];
