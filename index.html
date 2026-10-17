@@ -404,11 +404,17 @@ const PROJECTS = [
   {
     icon:"🧠", cat:"GenAI", kind:"M.Sc. Thesis · HTW Berlin",
     title:"LLM model cascade for cost-efficient inference",
-    short:"Benchmarking GPT-4.1, Gemini and cascade routing to cut LLM cost without losing quality.",
-    metrics:[["59.8%","est. cost reduction"],["105.9%","quality vs. GPT-4.1 alone (oracle)"]],
-    details:"An evaluation framework comparing single models with cascade routing strategies on the same question set, measuring cost against answer quality.",
-    bullets:["Benchmarked GPT-4.1, Gemini and cascade routing on 100 MMLU and GSM8K questions.","Estimated a 59.82% cost reduction at 105.88% quality retention under oracle routing, meaning the best-case cascade matched and slightly exceeded the strongest single model's accuracy.","Built with Python, LiteLLM and the OpenAI / Gemini APIs."],
-    tags:["Python","LiteLLM","LLM evaluation"], links:[]
+    short:"Small model first, big model only when needed: a realistic LLM-as-judge router kept 98.8% of GPT-4.1's quality at 25.7% lower cost.",
+    metrics:[["−25.7%","cost, realistic router"],["98.8%","quality vs. GPT-4.1"]],
+    details:"Frontier LLMs are accurate but expensive. I built an evaluation framework that sends every query to a cheap model (Gemini 2.5 Flash Lite) and escalates to GPT-4.1 only when needed, then measured cost, quality and latency on 100 seeded MMLU and GSM8K questions across four scenarios.",
+    bullets:[
+      "Compared four scenarios: GPT-4.1 only, Gemini only, an oracle cascade (theoretical upper bound) and a realistic LLM-as-judge cascade.",
+      "Oracle routing showed the ceiling: 59.8% lower cost at 105.9% quality retention. With perfect routing the cascade beat GPT-4.1 alone.",
+      "Built a realistic router: GPT-4o-mini judges the small model's answer without ground truth (JSON ACCEPT/ESCALATE plus confidence). It kept 98.8% quality (target 95%) at 25.7% lower cost.",
+      "Analysed router errors: only 3% false accepts, but 43% unnecessary escalations, which is where the remaining savings are lost.",
+      "Tracked tokens, cost (USD/EUR), latency and escalation per question with LiteLLM, including retries and rate-limit handling."
+    ],
+    tags:["Python","LiteLLM","GPT-4.1","Gemini","LLM-as-judge"], links:[{label:"View code on GitHub",url:"https://github.com/Anupbhagat77/LLM-Model-Cascade"}]
   },
   {
     icon:"🛡️", cat:"Computer Vision", kind:"Generative AI & CV · HTW Berlin · Technical lead",
